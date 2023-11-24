@@ -1,7 +1,7 @@
 body{
     margin: auto 0;
-    background-image: url(beeBackground.jpg);
-    background-size: cover;
+    /* background-image: url(beeBackground.jpg); */
+    /* background-size: cover; */
 
 }
 .main{
@@ -11,6 +11,14 @@ body{
     background-color: rgba(91, 91, 167,0.5);
     
 }
+
+@media only screen and (max-width:400px){
+    .main{
+        font-size: 0.5em;
+        padding: 0px;
+    }
+}
+
 li{
     background-color: yellow;
     list-style: none;
@@ -21,3 +29,40 @@ li{
 #sign{
     margin-left: auto;
 }
+
+.cover{
+    background-color: rgba(255,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /*View Port height helps in making the height side responsivse*/
+}
+
+.container-grid{
+    background-color: rgb(86, 149, 204);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+
+}
+
+.box > img{
+    width: 100%;
+}
+
+.box{
+    background-color: #444;
+    padding: 100px;
+    margin: 20px;
+
+}
+
+footer{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    height: 50px;
+}
+
