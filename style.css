@@ -1,0 +1,23 @@
+body{
+    margin: auto 0;
+    background-image: url(beeBackground.jpg);
+    background-size: cover;
+
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    background-color: rgba(91, 91, 167,0.5);
+    
+}
+li{
+    background-color: yellow;
+    list-style: none;
+    padding: 20px;
+    margin: 10px;
+}
+
+#sign{
+    margin-left: auto;
+}
